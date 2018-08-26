@@ -9,8 +9,7 @@ import {
   Platform,
   StyleSheet,
   Text,
-  View,
-  Image
+  View
 } from 'react-native';
 
 const instructions = Platform.select({
@@ -37,9 +36,9 @@ export default class App extends Component<Props> {
         <Text style={styles.instructions}>
           No Absen : 37
         </Text>
-        <image source={require('./AOV.png')}/>
+
       </View>
-    );
+    )
   }
 
 
@@ -55,16 +54,17 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    backgroundColor: '#32fcc7',
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
+    color: '#04048e',
   },
   instructions: {
     textAlign: 'center',
-    color: '#333333',
+    color: '#04048e',
     marginBottom: 5,
   },
 });

@@ -5,41 +5,21 @@
  */
 
 import React, { Component } from 'react';
-import {
-  Platform,
-  StyleSheet,
-  Text,
-  View,
-  Image
-} from 'react-native';
+import {  Platform,  StyleSheet,  Text,  View,  Image} from 'react-native';
+import Judul from './Components/Judul';
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' +
-    'Cmd+D or shake for dev menu',
-  android: 'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
-type Props = {};
-export default class App extends Component<Props> {
+export default class App extends Component {
   render() {
     return (
-      <View style={styles.container}>
+      <View style={gaya.gambar}>
+      <Judul/>
       <Image 
-      style={{width:300, height:200}}
+      style={{width:300, height:200}} 
       source ={require('./me.png')} />
-        <Text style={styles.welcome}>
-          HAI HAI!
-        </Text>
-        <Text style={styles.instructions}>
-          Nama : Zahrotun Mirna Nisa
-        </Text>
-        <Text style={styles.instructions}>
-          Kelas : XI RPL 4
-        </Text>
-        <Text style={styles.instructions}>
-          No Absen : 37
-        </Text>
+        <Text style={styles.welcome}>HAI HAI!</Text>
+        <Text style={styles.instructions}>Nama : Zahrotun Mirna Nisa</Text>
+        <Text style={styles.instructions}>Kelas : XI RPL 4</Text>
+        <Text style={styles.instructions}>No Absen : 37</Text>
 
       </View>
     )
@@ -50,7 +30,12 @@ export default class App extends Component<Props> {
 
 
 
-
+  
+}
+const gaya = {
+  gambar:{
+    alignItems: 'center',
+  }
 }
 
 const styles = StyleSheet.create({

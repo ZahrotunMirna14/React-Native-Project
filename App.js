@@ -12,7 +12,9 @@ export default class App extends Component {
   render() {
     return (
       <View style={gaya.gambar}>
-      <Judul/>
+      <Judul title="BIODATA"/>
+      <Judul title="LOGIN"/>
+      <Judul title="FORM"/>
       <Image 
       style={{width:300, height:200}} 
       source ={require('./me.png')} />

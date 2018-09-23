@@ -1,4 +1,4 @@
 import { AppRegistry } from 'react-native';
-import App from './App';
+import Login from './Screens/Login';
 
-AppRegistry.registerComponent('haihai37', () => App);
+AppRegistry.registerComponent('haihai37', () => Login);

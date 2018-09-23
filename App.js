@@ -1,8 +1,6 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
+
+
+
 
 import React, { Component } from 'react';
 import {  Platform,  StyleSheet,  Text,  View,  Image} from 'react-native';
@@ -11,10 +9,10 @@ import Judul from './Components/Judul';
 export default class App extends Component {
   render() {
     return (
-      <View style={gaya.gambar}>
+      <View style={styles.container}>
       <Judul title="BIODATA"/>
-      <Judul title="LOGIN"/>
-      <Judul title="FORM"/>
+
+      
       <Image 
       style={{width:300, height:200}} 
       source ={require('./me.png')} />
@@ -34,11 +32,7 @@ export default class App extends Component {
 
   
 }
-const gaya = {
-  gambar:{
-    alignItems: 'center',
-  }
-}
+
 
 const styles = StyleSheet.create({
   container: {
@@ -58,4 +52,5 @@ const styles = StyleSheet.create({
     color: '#04048e',
     marginBottom: 5,
   },
-});
+}
+);

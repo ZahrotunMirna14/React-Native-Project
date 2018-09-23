@@ -15,8 +15,9 @@ const salon = {
     judul:{
         color: '#fff',
         fontSize: 50,
-        backgroundColor: '#000',
-        textAlign: 'center'
+        justifyContent:'center',
+        textAlign: 'center',
+        backgroundColor:'#000000'
     }
 }
 
